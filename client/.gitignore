@@ -1,0 +1,10 @@
+# modules
+/node_modules
+
+# next
+.next
+
+# env
+.env
+*.env
+*.env.*
