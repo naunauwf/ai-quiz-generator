@@ -54,7 +54,7 @@ export default function Form() {
   return (
     <main className="flex sm:justify-center sm:items-center transition-all">
       <form
-        className="p-5 w-1/2 rounded-lg shadow-md flex-row"
+        className="p-5 w-1/2 rounded-lg shadow-md flex-row "
         onSubmit={handleSubmit}
       >
         <InputField
@@ -104,7 +104,7 @@ export default function Form() {
                 height={130}
                 className="rounded-lg object-cover w-36"
                 unoptimized
-              />  
+              />
             </div>
           )}
           <button
