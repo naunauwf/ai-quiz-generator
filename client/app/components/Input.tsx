@@ -23,7 +23,7 @@ export default function Input({
           type="text"
           value={value}
           onChange={onChange}
-          className="sm:w-full px-3 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 text-taupe-50 transition-all"
+          className="sm:w-full px-3 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 text-taupe-50 transition-all placeholder:text-xs sm:placeholder:text-base"
           placeholder={placeholder}
           required
         />
