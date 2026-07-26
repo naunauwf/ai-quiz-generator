@@ -3,6 +3,12 @@
 :root {
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @theme inline {
   --font-poppins: var(--font-poppins);
 }
