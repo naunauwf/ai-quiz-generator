@@ -6,7 +6,8 @@
     "dev:web": "pnpm --filter client dev",
     "dev:api": "pnpm --filter server dev",
     "dev": "concurrently \"pnpm dev:web\" \"pnpm dev:api\"",
-    "build": "pnpm --filter client build && pnpm --filter server build"
+    "build": "pnpm --filter client build && pnpm --filter server build",
+    "start": "pnpm --filter client start"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
