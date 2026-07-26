@@ -1,9 +1,9 @@
-import { getImages } from "../utils/get.data";
+import { getData } from "../utils/get.data";
 import Card from "../components/Card";
 import Form from "../components/Form";
 
 export default async function Dashboard() {
-  const files = await getImages();
+  const files = await getData();
 
   return (
     <main>
