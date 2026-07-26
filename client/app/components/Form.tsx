@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import InputField from "./Input";
+import Input from "./Input";
 import { useRouter } from "next/navigation";
 import { uploadImage } from "../utils/upload.data";
 import Image from "next/image";
@@ -52,19 +52,19 @@ export default function Form() {
   }
 
   return (
-    <main className="flex sm:justify-center sm:items-center transition-all">
+    <main className="flex justify-center transition-all">
       <form
-        className="p-5 w-1/2 rounded-lg shadow-md flex-row "
+        className="p-5 rounded-lg shadow-md flex-row"
         onSubmit={handleSubmit}
       >
-        <InputField
+        <Input
           label="Title"
           onChange={(e) => setTitle(e.target.value)}
           value={title}
           placeholder="masukan titlenya yh..."
           required
         />
-        <InputField
+        <Input
           label="Description"
           onChange={(e) => setDescription(e.target.value)}
           value={description}
