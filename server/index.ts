@@ -13,7 +13,9 @@ app.use(
 );
 
 app.get("/", (_req, res) => {
-  res.status(200).json("Hello Folks!");
+  res.status(200).json({
+    message: "hello p!"
+  });
 });
 
 app.listen(process.env.PORT, () => console.log("SERVER RUNNING..."));
