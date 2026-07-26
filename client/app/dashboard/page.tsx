@@ -6,9 +6,9 @@ export default async function Dashboard() {
   const files = await getData();
 
   return (
-    <main className="p-5  bg-gray-900 h-auto w-[80%] m-auto">
+    <main className="p-5  bg-gray-900 h-auto w-96 sm:w-[85%] m-auto">
       <h1 className="text-center font-bold text-2xl sm:text-3xl text-white ">
-        List of images from Supabase
+        List of Images
       </h1>
       {/* Form Input */}
       <div>
