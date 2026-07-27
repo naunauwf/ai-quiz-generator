@@ -52,9 +52,9 @@ export default function Form() {
   }
 
   return (
-    <main className="flex justify-center transition-all">
+    <main className="flex justify-center items-center transition-all">
       <form
-        className="p-5 rounded-lg shadow-md flex-row bg-brand-whit mb-5"
+        className="flex-row items-center justify-center w-full sm:w-auto p-5 rounded-lg mb-5"
         onSubmit={handleSubmit}
       >
         <Input
