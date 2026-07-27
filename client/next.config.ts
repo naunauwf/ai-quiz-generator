@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // only mobile  (local network)
+  allowedDevOrigins: [`${process.env.NEXT_PUBLIC_DEV_ORIGIN}`],
 };
 
 export default nextConfig;
