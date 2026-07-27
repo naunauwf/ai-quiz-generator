@@ -52,9 +52,9 @@ export default function Form() {
   }
 
   return (
-    <main className="flex justify-center items-center transition-all">
+    <div className="flex w-full justify-center items-center transition-all">
       <form
-        className="flex-row items-center justify-center w-full sm:w-auto p-5 rounded-lg mb-5"
+        className="flex-row items-center justify-center p-5 rounded-lg mb-5"
         onSubmit={handleSubmit}
       >
         <Input
@@ -116,6 +116,6 @@ export default function Form() {
           </button>
         </div>
       </form>
-    </main>
+    </div>
   );
 }
