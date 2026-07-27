@@ -6,7 +6,7 @@ export default async function Dashboard() {
   const files = await getData();
 
   return (
-    <main className="p-5  bg-gray-900 h-auto w-96 sm:w-[85%] m-auto">
+    <main className="p-5 m-24 bg-brand-secondary h-auto w-82 sm:w-[85%] mx-auto rounded-4xl">
       <h1 className="text-center font-bold text-2xl sm:text-3xl text-white ">
         List of Images
       </h1>
