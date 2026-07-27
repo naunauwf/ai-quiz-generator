@@ -32,7 +32,7 @@ export default function UploadImageButton() {
   }
 
   return (
-    <main>
+    <div>
       <input
         type="file"
         ref={fileInputRef}
@@ -47,6 +47,6 @@ export default function UploadImageButton() {
       >
         {loading ? "Uploading.." : "Upload File"}
       </button>
-    </main>
+    </div>
   );
 }
