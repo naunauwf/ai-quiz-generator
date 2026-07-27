@@ -4,7 +4,7 @@ export default async function Home() {
   return (
     <main>
       <nav>
-        <ul className="flex justify-center items-center gap-2.5 text-amber-300 font-bold">
+        <ul className="flex justify-center items-center gap-2.5 text-brand-white font-bold">
           <li>
             <Link href={"/dashboard"}>Dashboard</Link>
           </li>
