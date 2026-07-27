@@ -54,6 +54,7 @@ export default function Form() {
   return (
     <div className="flex w-full justify-center items-center transition-all">
       <form
+        suppressHydrationWarning={true}
         className="flex-row items-center justify-center p-5 rounded-lg mb-5"
         onSubmit={handleSubmit}
       >
