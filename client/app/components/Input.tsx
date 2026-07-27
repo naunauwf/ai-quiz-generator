@@ -14,7 +14,7 @@ export default function Input({
   onChange,
 }: InputFieldProps) {
   return (
-    <main>
+    <div>
       <div className="mb-4 sm:flex sm:flex-col sm:items-start">
         <label className="block text-brand-dark font-bold mb-2 text-sm transition-all">
           {label} {required && <span className="text-red-500">*</span>}
@@ -28,6 +28,6 @@ export default function Input({
           required
         />
       </div>
-    </main>
+    </div>
   );
 }
