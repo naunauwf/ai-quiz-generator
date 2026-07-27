@@ -10,6 +10,10 @@
 }
 
 @theme inline {
+  --color-brand-primary: #7fc8f8;
+  --color-brand-secondary: #fefcfb;
+  --color-brand-dark: #0a1128;
+  --color-brand-white: #fefcfb;
   --font-poppins: var(--font-poppins);
 }
 
