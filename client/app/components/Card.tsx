@@ -17,23 +17,23 @@ export default function Card({ title, description, src }: CardProps) {
 
   return (
     <div>
-      <div className="w-60 h-80 rounded-xl overflow-hidden bg-white shadow-md">
-        <div className="relative w-full h-52">
+      <div className="w-37.5 h-56 sm:w-60 sm:h-80 rounded-xl overflow-hidden bg-white shadow-md">
+        <div className="relative w-full h-40 sm:h-52">
           <Image
             src={src}
             alt={title || "image"}
-            className="w-full h-50 object-cover"
+            className="w-full object-cover"
             fill
             loading="eager"
             unoptimized
           />
         </div>
-        <div className="p-3">
-          <h2 className="text-lg font-bold mb-1 text-gray-900">
+        <div className="p-1.5 sm:p-3">
+          <h2 className="text-sm sm:text-lg font-bold text-gray-900">
             {title || "untitled"}
           </h2>
           <p
-            className={`${expanded ? "Selengkapnya hidden" : "line-clamp-2"}  text-gray-700 text-sm  `}
+            className={`${expanded ? "Selengkapnya hidden" : "line-clamp-4"}  text-gray-700 sm:text-sm text-xs sm:h-10`}
           >
             {description || "No description provided."}
           </p>
@@ -42,7 +42,7 @@ export default function Card({ title, description, src }: CardProps) {
               onClick={() => setExpanded(!expanded)}
               className="text-sm text-gray-400 hover:text-gray-500"
             >
-              {`${expanded ? "Tutup"  : "Selengkapnya"}`}
+              {`${expanded ? "Tutup" : "Selengkapnya"}`}
             </button>
           )}
           {expanded && (
