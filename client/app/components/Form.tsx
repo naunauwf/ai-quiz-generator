@@ -54,7 +54,7 @@ export default function Form() {
   return (
     <main className="flex justify-center transition-all">
       <form
-        className="p-5 rounded-lg shadow-md flex-row"
+        className="p-5 rounded-lg shadow-md flex-row bg-brand-whit mb-5"
         onSubmit={handleSubmit}
       >
         <Input
@@ -74,7 +74,7 @@ export default function Form() {
 
         {/* Input select file (not yet uploaded) */}
         <div className="flex flex-col items-start mb-4">
-          <label className="block text-green-300 font-bold mb-2 text-sm">
+          <label className="block text-brand-dark font-bold mb-2 text-sm">
             Upload Foto <span className="text-red-500">*</span>
           </label>
           {/* upload photo */}
@@ -83,20 +83,20 @@ export default function Form() {
             ref={fileInputRef}
             onChange={handleFileSelect}
             accept="image/*"
-            className="hidden text-xs border-2 rounded-md bg-green-300 hover:bg-green-400 p-1 w-20 font-bold text-gray-900"
+            className="hidden text-xs border-2 rounded-md bg-green-300 hover:bg-green-400 p-1 w-20 font-bold text-brand-dark"
             required
           />
           <button
             type="button"
             onClick={() => fileInputRef.current?.click()}
-            className="text-xs border-2 rounded-lg bg-green-300 hover:bg-green-400 p-1 font-bold text-gray-900 "
+            className="text-xs rounded-lg bg-gray-300 hover:bg-gray-400 p-1 font-bold text-brand-dark "
           >
             {file ? "Ganti Foto?" : "Upload"}
           </button>
           {/* Local image preview */}
           {previewUrl && (
             <div className="mb-4">
-              <p className=" text-xs mb-1 text-green-300">Preview Foto:</p>
+              <p className=" text-xs mb-1 text-brand-dark">Preview Foto:</p>
               <Image
                 src={previewUrl}
                 alt="Preview Image"
@@ -108,7 +108,7 @@ export default function Form() {
             </div>
           )}
           <button
-            className="mt-3 text-xs sm:text-sm px-2 py-1 bg-green-300 rounded-lg hover:bg-green-400 text-gray-900 font-bold transition-all"
+            className="mt-3 text-xs sm:text-sm px-2 py-1 bg-gray-300 rounded-lg hover:bg-gray-400 text-brand-dark font-bold transition-all"
             type="submit"
             disabled={loading}
           >
