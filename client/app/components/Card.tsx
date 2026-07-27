@@ -16,7 +16,7 @@ export default function Card({ title, description, src }: CardProps) {
   const isLong = description.length > MAX_LENGTH;
 
   return (
-    <main>
+    <div>
       <div className="w-60 h-80 rounded-xl overflow-hidden bg-white shadow-md">
         <div className="relative w-full h-52">
           <Image
@@ -52,6 +52,6 @@ export default function Card({ title, description, src }: CardProps) {
           )}
         </div>
       </div>
-    </main>
+    </div>
   );
 }
