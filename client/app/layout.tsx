@@ -26,10 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html
+      suppressHydrationWarning={true}
       lang="en"
-      className={`${poppins.variable}  h-full antialiased bg-brand-primary`}
+      translate="no"
+      className={`${poppins.variable} notranslate  h-full antialiased bg-brand-primary`}
     >
-      <body className="min-h-full flex flex-col">
+      <head>
+        <meta name="google" content="notranslate" />
+      </head>
+      <body suppressHydrationWarning className="min-h-full flex flex-col">
         {children} <Analytics />
       </body>
     </html>
