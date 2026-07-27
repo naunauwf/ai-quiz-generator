@@ -43,7 +43,7 @@ export default function UploadImageButton() {
       <button
         onClick={() => fileInputRef.current?.click()}
         disabled={loading}
-        className="text-gray-900 w-20 h-7 leading-2 border-white border p-1 rounded-xl bg-green-300 text-[12px] font-bold m-2.5 text-center hover:bg-green-400 transition-all cursor-pointer disabled:opacity-50"
+        className="text-gray-200 w-20 h-7 leading-2 border-white border p-1 rounded-xl bg-gray-200 text-[12px] font-bold m-2.5 text-center hover:bg-gray-300 transition-all cursor-pointer disabled:opacity-50"
       >
         {loading ? "Uploading.." : "Upload File"}
       </button>
