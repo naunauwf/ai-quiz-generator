@@ -6,7 +6,7 @@ export default function Notification({
   onClose?: () => void;
 }) {
   return (
-    <main>
+    <div>
       <div className="transition-all fixed flex justify-center items-center inset-0 bg-black/50 z-50">
         <div className=" bg-white font-semibold text-gray-600 px-5 rounded-lg w-80 text-cente max-w-full p-5">
           <p className="mb-4">{children}</p>
@@ -18,6 +18,6 @@ export default function Notification({
           </button>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
