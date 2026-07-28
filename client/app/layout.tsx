@@ -32,7 +32,10 @@ export default function RootLayout({
       className={`${poppins.variable} notranslate  h-full antialiased bg-brand-primary`}
     >
       <head>
-        <meta name="google" content="notranslate" />
+        <meta
+          name="viewport, google"
+          content="width=device-width, initial-scale=1, notranslate"
+        />
       </head>
       <body suppressHydrationWarning className="min-h-full flex flex-col">
         {children} <Analytics />
