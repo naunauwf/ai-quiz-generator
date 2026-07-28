@@ -84,13 +84,13 @@ export default function Form() {
             ref={fileInputRef}
             onChange={handleFileSelect}
             accept="image/*"
-            className="hidden text-xs border-2 rounded-md bg-green-300 hover:bg-green-400 p-1 w-20 font-bold text-brand-dark"
+            className="hidden"
             required
           />
           <button
             type="button"
             onClick={() => fileInputRef.current?.click()}
-            className="text-xs rounded-lg bg-gray-300 hover:bg-gray-400 px-2 py-1 font-semibold text-brand-dark "
+            className="text-xs rounded-lg bg-gray-300 hover:bg-gray-400 px-2 py-1 font-semibold text-brand-dark cursor-pointer"
           >
             {file ? "Ganti Foto?" : "Upload"}
           </button>
@@ -109,7 +109,7 @@ export default function Form() {
             </div>
           )}
           <button
-            className="mt-3 text-xs sm:text-sm px-2 py-1 bg-gray-300 rounded-lg hover:bg-gray-400 text-brand-dark font-semibold transition-all"
+            className="mt-3 text-xs sm:text-sm px-2 py-1 bg-gray-300 rounded-lg hover:bg-gray-400 text-brand-dark font-semibold transition-all cursor-pointer"
             type="submit"
             disabled={loading}
           >
