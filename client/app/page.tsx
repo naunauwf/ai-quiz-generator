@@ -3,15 +3,15 @@ import Link from "next/link";
 export default async function Home() {
   return (
     <main>
-      <nav>
-        <ul className="flex justify-center items-center gap-2.5 text-brand-white font-bold">
-          <li>
-            <Link href={"/dashboard"}>Dashboard</Link>
+      <nav className="m-5 bg-brand-white mx-auto w-1/2 h-auto rounded-lg">
+        <ul className="flex justify-center items-center gap-2.5  text-brand-dark font-bold">
+          <li className="hover:text-gray-500 transition-all">
+            <Link href={"/gallery"}>Gallery</Link>
           </li>
-          <li>
+          <li className="hover:text-gray-500">
             <Link href={""}>About Us</Link>
           </li>
-          <li>
+          <li className="hover:text-gray-500">
             <Link href={""}>Contact</Link>
           </li>
         </ul>
