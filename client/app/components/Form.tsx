@@ -52,10 +52,10 @@ export default function Form() {
   }
 
   return (
-    <div className="flex w-full justify-center items-center transition-all">
+    <div className="flex justify-center items-center transition-all">
       <form
         suppressHydrationWarning={true}
-        className="flex-row items-center justify-center p-5 rounded-lg mb-5"
+        className="flex-row min-w-fit items-center justify-center w-f p-5 rounded-lg mb-5"
         onSubmit={handleSubmit}
       >
         <Input
@@ -90,7 +90,7 @@ export default function Form() {
           <button
             type="button"
             onClick={() => fileInputRef.current?.click()}
-            className="text-xs rounded-lg bg-gray-300 hover:bg-gray-400 p-1 font-bold text-brand-dark "
+            className="text-xs rounded-lg bg-gray-300 hover:bg-gray-400 px-2 py-1 font-semibold text-brand-dark "
           >
             {file ? "Ganti Foto?" : "Upload"}
           </button>
@@ -109,7 +109,7 @@ export default function Form() {
             </div>
           )}
           <button
-            className="mt-3 text-xs sm:text-sm px-2 py-1 bg-gray-300 rounded-lg hover:bg-gray-400 text-brand-dark font-bold transition-all"
+            className="mt-3 text-xs sm:text-sm px-2 py-1 bg-gray-300 rounded-lg hover:bg-gray-400 text-brand-dark font-semibold transition-all"
             type="submit"
             disabled={loading}
           >
