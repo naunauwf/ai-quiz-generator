@@ -12,7 +12,7 @@ export default function Notification({
           <p className="mb-4">{children}</p>
           <button
             onClick={onClose}
-            className="bg-green-300 hover:bg-green-400 text-gray-600 rounded-lg px-3 border-none outline-gray-600 cursor-pointer"
+            className="bg-gray-300 hover:bg-gray-400 text-brand-dark rounded-lg px-3 border-none outline-gray-600 cursor-pointer focus:bg-gray-400"
           >
             Tutup
           </button>
