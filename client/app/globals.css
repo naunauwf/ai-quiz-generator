@@ -17,6 +17,7 @@
   --color-brand-hvrdark: #525972;
   --color-brand-white: #fefcfb;
   --font-poppins: var(--font-poppins);
+  --animate-fadeIn: fadeIn 400ms ease-in;
 }
 
 html,
@@ -24,8 +25,19 @@ body {
   font-family: var(--font-poppins), sans-serif;
   scrollbar-width: none;
 }
- 
+
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
