@@ -125,7 +125,7 @@ export default function Form() {
                 </div>
                 {showConfirm && (
                   <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50">
-                    <div className="bg-white p-5 rounded-lg text-center max-w-xs w-full shadow-lg">
+                    <div className="bg-white p-5 rounded-lg text-center max-w-xs w-full shadow-lg animate-fadeIn">
                       <p className="text-gray-800 font-semibold mb-4 text-sm transition-all">
                         Yakin nich mau hapus?
                       </p>
@@ -133,14 +133,14 @@ export default function Form() {
                         <button
                           type="button"
                           onClick={deletePreview}
-                          className="bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-md text-xs font-semibold cursor-pointer transition-all"
+                          className="bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-md text-xs font-semibold cursor-pointer transition-all text-center"
                         >
                           Y
                         </button>
                         <button
                           type="button"
                           onClick={() => setShowConfirm(false)}
-                          className="bg-gray-300 hover:bg-gray-400 text-gray-700 px-3 py-1.5 rounded-md text-xs font-semibold cursor-pointer transition-all"
+                          className="bg-gray-300 hover:bg-gray-400 text-gray-700 px-3 py-1.5 rounded-md text-xs font-semibold cursor-pointer transition-all text-center"
                         >
                           G
                         </button>
