@@ -23,6 +23,7 @@ export default async function Dashboard() {
       <div className="flex justify-center items-center flex-wrap p-5 gap-5 sm:gap-3.5">
         {files?.map((file) => (
           <Card
+            id={file.id}
             key={file.id}
             title={file.title}
             description={file.description}
